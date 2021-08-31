@@ -283,7 +283,13 @@ html, body {
 .product-name{
     font-size:1.6rem;
     color: var(--dark);
-    padding: 12px 0;
+    margin: 12px 0;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .product-cost{
     font-size:1.6rem;
