@@ -6,6 +6,7 @@
     --text-color-secondary-hover: #e56266;
     --pink: #e83e8c;
     --pink-light: #ffb0bd;
+    --pink-light-secondary: #fd8fa1;
     --red: #dc3545;
     --orange: #fd7e14;
     --yellow: #ffc107;
@@ -84,7 +85,7 @@ html, body {
 }
 .btn-search:hover{
     color: #fff;
-    background-color: #fd8fa1;
+    background-color: var(--pink-light-secondary);
 }
 .header__link{
     font-size: 1.4rem;
@@ -217,6 +218,8 @@ html, body {
 .product{
     overflow: hidden;
     border-radius: 10px;
+    opacity: 1;
+    top: auto;
 }
 .product:hover{
     transform: translateY(1);
@@ -283,6 +286,7 @@ html, body {
 .product-name{
     font-size:1.6rem;
     color: var(--dark);
+    min-height: 38px;
     margin: 12px 0;
     display: -webkit-box;
     word-wrap: break-word;
@@ -295,4 +299,19 @@ html, body {
     font-size:1.6rem;
     color: #000;
     font-weight: 700;
+}
+.more{
+    display: none;
+}
+.btn-pink{
+    font-size:1.6rem;
+    text-transform: uppercase;
+    color: var(--light);
+    padding: 8px 16px;
+    background-color: var(--pink-light);
+    border-radius: 8px;
+}
+.btn-pink:hover{
+    color: var(--light);
+    background-color: var(--pink-light-secondary);
 }
