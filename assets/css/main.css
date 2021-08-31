@@ -1,0 +1,203 @@
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --text-color-secondary: #8a4762;
+    --text-color-secondary-hover: #e56266;
+    --pink: #e83e8c;
+    --pink-light: #ffb0bd;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 62.5%;
+    font-family: var(--font-family-sans-serif);
+    overflow: hidden;
+}
+
+.header-top{
+    background-color: var(--pink-light);
+}
+.header-top__link{
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 7px 10px;
+    color: var(--text-color-secondary);
+    font-weight: 600;
+}
+.header-top__link:hover{
+    color: var(--text-color-secondary-hover);
+}
+.header-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search-form{
+    display: flex;
+    border: 2px solid var(--pink-light);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search-form-input{
+    border: none;
+    font-size: 1.5rem;
+    padding: 6px 10px;
+}
+.search-form-input:focus{
+    border-color: currentColor !important;
+    box-shadow: none;
+}
+.btn-search{
+    color: #fff;
+    padding:  0 10px;
+    background-color: var(--pink-light);
+}
+.btn-search:hover{
+    color: #fff;
+    background-color: #fd8fa1;
+}
+.header__link{
+    font-size: 1.4rem;
+    color: var(--dark);
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 12px;
+    transition: 0.2s linear;
+}
+.header__link:hover{
+    color: var(--pink-light);
+}
+.header-logon{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    height: 65px;
+}
+.link__logon:first-child::before{
+    content: "";
+    width: 1.5px;
+    height: 20px;
+    position: absolute;
+    background-color: var(--dark);
+    top: 10%;
+    left: calc(100% + 1px);
+}
+.link__logon{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 0 2px;
+}
+.header-cart{
+    position: relative;
+}
+.header-cart-icon{
+    margin-left: 8px;
+    font-size: 3.5rem;
+    cursor: pointer;
+    line-height: 3.8rem;
+}
+.header-cart-quantity{
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--red);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: -4px;
+    right: -8px;
+}
+.header-cart:hover .header-cart-list{
+    display: block;
+}
+.header-cart-list{
+    top: calc(100% + 6px);
+    position: absolute;
+    right: -3px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    display: none;
+    animation: scaleNotify ease-in 0.1s;
+    cursor: default;
+    z-index: 1;
+}
+.header-cart-no-item-img {
+    width: 54%;   
+}
+.header-cart-no-item-img,
+.header-cart-no-item-msg{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-cart-no-item-msg {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: var(--dark);
+    text-align: center;
+}
+.list-no-item{
+    display: none;
+}
+.header-cart:hover .no-item .list-no-item{
+    display: block;
+}
+
+.header-cart-list::before{
+    content: "";
+    position: absolute;
+    right: 1px;
+    border-width: 15px 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    top: -22px;
+    cursor: pointer;
+}
+.header-cart-list::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: -22px;
+    right: 0;
+}
+.header-bot{
+    background-color: var(--pink-light);
+}
+.banner-right a:first-child{
+    display: block;
+    margin-bottom: 9px;
+}
