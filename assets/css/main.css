@@ -315,3 +315,15 @@ html, body {
     color: var(--light);
     background-color: var(--pink-light-secondary);
 }
+
+/* Footer */
+.f-start
+.f-end{
+    background-color: var(--pink-light);
+    color: var(--light);
+    margin-top: 40px;
+    padding: 24px 0;
+}
+.f-end{
+    
+}
