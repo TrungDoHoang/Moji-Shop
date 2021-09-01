@@ -230,7 +230,7 @@ html, body {
 }
 .product-img{
     width: 100%;
-    height: 256px;
+    max-height: 256px;
     z-index: 0;
     overflow: hidden;
     position: relative;
