@@ -28,15 +28,15 @@
     </div>
     <div class="header-content">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12 mt-4">
-                    <div class="navbar-brand mt-2">
+            <div class="row justify-content-between justify-content-md-between">
+                <div class="col-lg-3 col-md-6 col-3 mt-4">
+                    <div class="navbar-brand mt-2 ms-lg-0 ms-md-0 ms-4">
                         <a href="">
                             <img src="./assets/images/Logo.png" alt="Trang chủ" width="165">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12 mt-5">
+                <div class="col-lg-6 d-lg-block d-none mt-5">
                     <div class="header-search">
                         <form class="search-form" action="" method="post">
                             <input type="text" class="form-control search-form-input" placeholder="Tìm kiếm sản phẩm">
@@ -52,28 +52,114 @@
                         </span>
                     </div>
                 </div>
-                <div class="header-logon col-3  mt-4">
-                    <a href="#" class="link__logon header__link text-decoration-none">Đăng nhập</a>
-                    <a href="#" class="link__logon header__link text-decoration-none">Đăng ký</a>
+                <div class="header-logon col-3 col-md-4 col-lg-3 mt-4">
+                    <a href="#"
+                        class="link__logon d-none d-lg-inline-block d-md-inline-block header__link text-decoration-none">Đăng
+                        nhập</a>
+                    <a href="#"
+                        class="link__logon d-none d-lg-inline-block d-md-inline-block header__link text-decoration-none">Đăng
+                        ký</a>
                     <div class="header-cart">
                         <span class="header-cart-icon material-icons-outlined">
                             shopping_bag
                         </span>
                         <span
                             class="header-cart-quantity d-flex justify-content-center align-items-center radiu">3</span>
+                        <!-- Cart no item: add class no-item -->
                         <div class="header-cart-list no-item">
                             <!-- No item -->
                             <div class="list-no-item">
                                 <img src="./assets/images/no-cart.png" alt="" class="header-cart-no-item-img">
                                 <span class="header-cart-no-item-msg">Chưa có sản phẩm</span>
                             </div>
+                            <!-- Has item -->
+                            <ul class="cart-list-item">
+                                <li class="cart-item">
+                                    <a href="" class="cart-item-name text-decoration-none">
+                                        <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
+                                            class="cart-item-img">
+                                    </a>
+                                    <div class="d-flex flex-column ms-4 justify-content-between">
+                                        <a href="" title="Squishy MJ Momo duck nháy
+                                        mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck nháy
+                                            mắt 7cm</a>
+                                        <span class="cart-item-cost">Đơn giá: 50.000đ</span>
+                                    </div>
+                                    <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
+                                        <span class="cart-item-quantity">x1</span>
+                                        <span class="cart-item-delete material-icons-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="cart-item">
+                                    <a href="" class="cart-item-name text-decoration-none">
+                                        <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
+                                            class="cart-item-img">
+                                    </a>
+                                    <div class="d-flex flex-column ms-4 justify-content-between">
+                                        <a href="" title="Squishy MJ Momo duck nháy
+                                        mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck nháy
+                                            mắt 7cm</a>
+                                        <span class="cart-item-cost">Đơn giá: 50.000đ</span>
+                                    </div>
+                                    <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
+                                        <span class="cart-item-quantity">x1</span>
+                                        <span class="cart-item-delete material-icons-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="cart-item">
+                                    <a href="" class="cart-item-name text-decoration-none">
+                                        <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
+                                            class="cart-item-img">
+                                    </a>
+                                    <div class="d-flex flex-column ms-4 justify-content-between">
+                                        <a href="" title="Squishy MJ Momo duck nháy
+                                        mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck nháy
+                                            mắt 7cm</a>
+                                        <span class="cart-item-cost">Đơn giá: 50.000đ</span>
+                                    </div>
+                                    <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
+                                        <span class="cart-item-quantity">x1</span>
+                                        <span class="cart-item-delete material-icons-outlined">
+                                            delete
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="total d-flex flex-column">
+                                <div class="d-flex justify-content-between py-4">
+                                    <span>Thành tiền:</span>
+                                    <div class="total-cost">95.000đ</div>
+                                </div>
+                                <div class="go-to-cart btn btn-pink">Xem giỏ hàng</div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <!-- Search mobile -->
+                <div class="col-12 d-lg-none">
+                    <div class="header-search">
+                        <form class="search-form" action="" method="post">
+                            <input type="text" class="form-control search-form-input" placeholder="Tìm kiếm sản phẩm">
+                            <div class="btn btn-search d-flex align-items-center"><span class="material-icons-outlined">
+                                    search
+                                </span></div>
+                        </form>
+                        <span class="quick-search mt-2">
+                            <a class="header__link text-decoration-none" href="#">Ốp điện thoại</a>
+                            <a class="header__link text-decoration-none" href="#">Quạt nhựa</a>
+                            <a class="header__link text-decoration-none" href="#">Sticker</a>
+                            <a class="header__link text-decoration-none" href="#">BT21</a>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header-bot">
+    <div class="header-bot d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col text-start">
@@ -86,6 +172,7 @@
         </div>
     </div>
     <!-- End header -->
+
     <!-- Begin SlideGroup -->
     <div class="slide-group">
         <div class="row gx-3">
@@ -109,12 +196,12 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="btn-pink carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="btn-pink carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -132,6 +219,7 @@
         </div>
     </div>
     <!-- End SlideGroup -->
+
     <!-- Begin main -->
     <div class="main">
         <div class="container">
@@ -852,35 +940,114 @@
         </div>
     </div>
     <!-- End main -->
+
+    <!-- Multi carousel -->
+    <div class="container multi-carousel text-center mt-5 my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide col-12" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="assets/images/banner/sb_1608715990_418.jpg" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/banner/sb_1612252488_11.jpg" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/banner/sb_1616251716_583.jpg" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/banner/sb_1619281189_509.jpg" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./assets/images/banner/sb_1622297990_263.jpg" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon btn-pink" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon btn-pink" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Multi carousel -->
+
     <!-- Begin Footer -->
     <footer>
         <div class="f-start">
             <div class="container">
-                <div class="row">
-                    <div class="f-hotline col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <div class="row gx-5">
+                    <div class="f-hotline col-xl-2 col-md-3 col-12">
                         <div class="item d-inline-flex align-items-end full clearfix">
-                            <div class="pull-left"><i class="fa fa-phone-square"></i></div>
-                            <a href="javascript:void(0)" class="pull-left">
-                                Hotline
-                                <span class="big full clearfix">0899.179.989</span>
+                            <div class="pull-left"><span class="f-icon material-icons-outlined">
+                                    phone_in_talk
+                                </span></div>
+                            <a href="#" class="pull-left">
+                                <span class="text-18">
+                                    Hotline
+                                </span>
+                                <span class="big full clearfix text-23">0899.179.989</span>
                             </a>
                         </div>
                         <div class="item d-inline-flex align-items-end full clearfix">
-                            <div class="pull-left"><i class="fa fa-envelope"></i></div>
-                            <a href="javascript:void(0)" class="pull-left">
-                                Email
-                                <span class="full clearfix">cskh@moji.vn</span>
+                            <div class="pull-left"><span class="f-icon material-icons-outlined">
+                                    email
+                                </span></div>
+                            <a href="#" class="pull-left ">
+                                <span class="text-18">
+                                    Email
+                                </span>
+                                <span class="full clearfix text-23">cskh@moji.vn</span>
                             </a>
                         </div>
                         <div class="item f-txt-l full clearfix">
-                            <p><span style="font-size:14px;"><a href="/chinh-sach-ban-hang-n53878.html" target="_blank"
-                                        rel="noreferrer noopener">CHÍNH SÁCH BÁN HÀNG</a></span></p>
-                            <p><a href="/huong-dan-mua-hang-n59156.html" target="_blank" rel="noreferrer noopener"><span
-                                        style="font-size:14px;">HƯỚNG DẪN MUA HÀNG</span></a></p>
+                            <p><a class="pull-left" href="" target="_blank" rel="noreferrer noopener">CHÍNH SÁCH BÁN
+                                    HÀNG</a></p>
+                            <p><a class="pull-left" href="" target="_blank" rel="noreferrer noopener">HƯỚNG DẪN MUA
+                                    HÀNG</a></p>
                             <p></p>
                         </div>
                     </div>
-                    <div class="f-room col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="f-room col-xl-3 col-md-3 col-12">
                         <h3 class="f-title">HÀ NỘI</h3>
                         <div class="f-room-text">
                             <ul>
@@ -889,56 +1056,62 @@
                                 <li>60 Trần Đại Nghĩa, Hai Bà Trưng</li>
                                 <li>226 Nguyễn Trãi, Nam Từ Liêm (gần ĐH Hà Nội)</li>
                                 <li>157 Xuân Thủy, Cầu Giấy</li>
-                                <li>7&nbsp;ngõ 165 Thái Hà, Đống Đa</li>
+                                <li>7 ngõ 165 Thái Hà, Đống Đa</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="f-room f-room-2 col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                    <div class="f-room  col-xl-5 col-md-3 col-12">
                         <h3 class="f-title">TP. HỒ CHÍ MINH</h3>
                         <div class="f-room-text">
                             <ul>
-                                <li>92&nbsp;Hồ Tùng Mậu, P.Bến Nghé,&nbsp;Q1</li>
-                                <li>459E Nguyễn Đình Chiểu, P.5, Q.3&nbsp;(ngã tư Cao Thắng)</li>
+                                <li>92 Hồ Tùng Mậu, P.Bến Nghé, Q1</li>
+                                <li>459E Nguyễn Đình Chiểu, P.5, Q.3 (ngã tư Cao Thắng)</li>
                                 <li>708 Sư Vạn Hạnh, P.12, Q.10 (đối diện chéo Vạn Hạnh Mall)</li>
-                                <li>87 Bàu Cát, P.14, Q.Tân Bình&nbsp;(khúc giao Nguyễn Hồng Đào)</li>
+                                <li>87 Bàu Cát, P.14, Q.Tân Bình (khúc giao Nguyễn Hồng Đào)</li>
                                 <li>54A Hoa Lan, P.2, Q.Phú Nhuận (gần Pizza Hut Phan Xích Long)</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="f-lo-social col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <div class="f-lo-social col-xl-2 col-md-3 col-12">
                         <a href="/" class="f-logo text-center">
                             <img data-sizes="auto" class="lazyautosizes ls-is-cached lazyloaded"
-                                src="/tp/T0299/img/logo-f.png" data-src="/tp/T0299/img/logo-f.png" alt="logo" sizes="107px">
+                                src="./assets/images/logo-f.png" data-src="./assets/images/logo-f.png" alt="logo"
+                                sizes="107px">
                         </a>
                         <h3 class="f-title mt-3">Hãy kết nối với chúng mình</h3>
-                        <div class="social text-center">
-                            <a href="https://www.instagram.com/mojivn">
+                        <div class="social text-start ms-4">
+                            <a class="text-decoration-none" href="https://www.instagram.com/mojivn">
                                 <img data-sizes="auto" class="lazyautosizes ls-is-cached lazyloaded"
-                                    src="/tp/T0299/img/social-color-insta.png"
-                                    data-src="/tp/T0299/img/social-color-insta.png" alt="instagram" sizes="24px">
+                                    src="./assets/images/social-color-insta.png"
+                                    data-src="./assets/images/social-color-insta.png" alt="instagram" sizes="24px">
                             </a>
-                            <a href="https://www.facebook.com/mojivietnam">
+                            <a class="text-decoration-none" href="https://www.facebook.com/mojivietnam">
                                 <img data-sizes="auto" class="lazyautosizes ls-is-cached lazyloaded"
-                                    src="/tp/T0299/img/fb-logo.png" data-src="/tp/T0299/img/fb-logo.png" alt="facebook"
-                                    sizes="24px">
+                                    src="./assets/images/fb-logo.png" data-src="./assets/images/fb-logo.png"
+                                    alt="facebook" sizes="24px">
                             </a>
-                            <a href="https://www.youtube.com/channel/UCld80kfDOf0yUeKV7_hv6cw?ab_channel=MojiChannel">
+                            <a class="text-decoration-none"
+                                href="https://www.youtube.com/channel/UCld80kfDOf0yUeKV7_hv6cw?ab_channel=MojiChannel">
                                 <img data-sizes="auto" class="lazyautosizes ls-is-cached lazyloaded"
-                                    src="/tp/T0299/img/social-color-youtube.png"
-                                    data-src="/tp/T0299/img/social-color-youtube.png" alt="youtube" sizes="34px">
+                                    src="./assets/images/social-color-youtube.png"
+                                    data-src="./assets/images/social-color-youtube.png" alt="youtube" sizes="34px">
                             </a>
                         </div>
-                        <a class="logo-bct" href="http://online.gov.vn/Home/WebDetails/34491?AspxAutoDetectCookieSupport=1"
+                        <a class="logo-bct"
+                            href="http://online.gov.vn/Home/WebDetails/34491?AspxAutoDetectCookieSupport=1"
                             target="_blank" title="Đã thông báo Bộ Công Thương">
                             <img class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto"
-                                src="/img/dathongbaobocongthuong.png" data-src="/img/dathongbaobocongthuong.png"
-                                alt="Đã thông báo Bộ Công Thương" sizes="118px">
+                                src="./assets/images/dathongbaobocongthuong.png"
+                                data-src="./assets/images/dathongbaobocongthuong.png" alt="Đã thông báo Bộ Công Thương"
+                                sizes="118px">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="f-end container-fluid text-center"><p>Copyright © 2019 . All Rights Reserved</p></div>
+        <div class="f-end container-fluid text-center">
+            <p>Copyright © 2019 . All Rights Reserved</p>
+        </div>
     </footer>
     <!-- End Footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
