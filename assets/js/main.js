@@ -26,3 +26,7 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
+// $('.header-cart').click(() => {
+//     $('.header-cart-list').toggle()
+// })

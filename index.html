@@ -15,162 +15,202 @@
 
 <body>
     <!-- Begin header -->
-    <div class="header-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-uppercase d-flex justify-content-around justify-content-lg-end">
-                    <a href="#" class="header-top__link text-decoration-none">hệ thống cửa hàng</a>
-                    <a href="#" class="header-top__link text-decoration-none">về Moji</a>
-                    <a href="#" class="header-top__link text-decoration-none">tuyển dụng</a>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-uppercase d-flex justify-content-around justify-content-lg-end">
+                        <a href="#" class="header-top__link text-decoration-none">hệ thống cửa hàng</a>
+                        <a href="#" class="header-top__link text-decoration-none">về Moji</a>
+                        <a href="#" class="header-top__link text-decoration-none">tuyển dụng</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header-content">
-        <div class="container">
-            <div class="row justify-content-between justify-content-md-between">
-                <div class="col-lg-3 col-md-6 col-3 mt-4">
-                    <div class="navbar-brand mt-2 ms-lg-0 ms-md-0 ms-4">
-                        <a href="">
-                            <img src="./assets/images/Logo.png" alt="Trang chủ" width="165">
+        <div class="header-content">
+            <div class="container">
+                <div class="row justify-content-around justify-content-md-between">
+                    <input type="checkbox" name="toggle" id="toggle" hidden>
+                    <label class="toggle-btn d-flex d-lg-none col-2 justify-content-center align-items-center"
+                        for="toggle"><span class="material-icons-outlined">
+                            segment
+                        </span></label>
+                    <!-- Nav-mobile -->
+                    <label for="toggle" class="overlay d-none"></label>
+                    <nav class="nav-mobile d-none">
+                        <label for="toggle" class="nav-mobile-items float-end d-inline-block p-3">
+                            <span class="material-icons-outlined">
+                                close
+                                </span>
+                        </label>
+                        <div class="nav-mobile-items">
+                            <a href="#" class="header-top__link text-decoration-none">TẤT CẢ</a>
+                        </div>
+                        <div class="nav-mobile-items">
+                            <a href="#" class="header-top__link text-decoration-none">Sách vở</a>
+                        </div>
+                        <div class="nav-mobile-items">
+                            <a href="#" class="header-top__link text-decoration-none">Dụng cụ học tập</a>
+                        </div>
+                        <div class="nav-mobile-items">
+                            <a href="#" class="header-top__link text-decoration-none">Liên hệ</a>
+                        </div>
+                    </nav>
+                    <div class="col-lg-3 col-md-2 col-5 mt-4">
+                        <div class="navbar-brand mt-2 ms-lg-0 ms-md-0 ms-4">
+                            <a href="">
+                                <img src="./assets/images/Logo.png" alt="Trang chủ" width="165">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-lg-block d-none mt-5">
+                        <div class="header-search">
+                            <form class="search-form" action="" method="post">
+                                <input type="text" class="form-control search-form-input"
+                                    placeholder="Tìm kiếm sản phẩm">
+                                <div class="btn btn-search d-flex align-items-center"><span
+                                        class="material-icons-outlined">
+                                        search
+                                    </span></div>
+                            </form>
+                            <span class="quick-search mt-2">
+                                <a class="header__link text-decoration-none" href="#">Ốp điện thoại</a>
+                                <a class="header__link text-decoration-none" href="#">Quạt nhựa</a>
+                                <a class="header__link text-decoration-none" href="#">Sticker</a>
+                                <a class="header__link text-decoration-none" href="#">BT21</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="header-logon col-3 col-md-4 col-lg-3 mt-4">
+                        <a href="#"
+                            class="link__logon d-none d-lg-inline-block d-md-inline-block header__link text-decoration-none">Đăng
+                            nhập</a>
+                        <a href="#"
+                            class="link__logon d-none d-lg-inline-block d-md-inline-block header__link text-decoration-none">Đăng
+                            ký</a>
+                        <a href="#"
+                            class="icon-user-mobile d-flex align-items-center justify-content-center d-lg-none d-md-none header__link text-decoration-none">
+                            <span class="material-icons-outlined">
+                                person
+                            </span>
                         </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-lg-block d-none mt-5">
-                    <div class="header-search">
-                        <form class="search-form" action="" method="post">
-                            <input type="text" class="form-control search-form-input" placeholder="Tìm kiếm sản phẩm">
-                            <div class="btn btn-search d-flex align-items-center"><span class="material-icons-outlined">
-                                    search
-                                </span></div>
-                        </form>
-                        <span class="quick-search mt-2">
-                            <a class="header__link text-decoration-none" href="#">Ốp điện thoại</a>
-                            <a class="header__link text-decoration-none" href="#">Quạt nhựa</a>
-                            <a class="header__link text-decoration-none" href="#">Sticker</a>
-                            <a class="header__link text-decoration-none" href="#">BT21</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="header-logon col-3 col-md-4 col-lg-3 mt-4">
-                    <a href="#"
-                        class="link__logon d-none d-lg-inline-block d-md-inline-block header__link text-decoration-none">Đăng
-                        nhập</a>
-                    <a href="#"
-                        class="link__logon d-none d-lg-inline-block d-md-inline-block header__link text-decoration-none">Đăng
-                        ký</a>
-                    <div class="header-cart">
-                        <span class="header-cart-icon material-icons-outlined">
-                            shopping_bag
-                        </span>
-                        <span
-                            class="header-cart-quantity d-flex justify-content-center align-items-center radiu">3</span>
-                        <!-- Cart no item: add class no-item -->
-                        <div class="header-cart-list no-item">
-                            <!-- No item -->
-                            <div class="list-no-item">
-                                <img src="./assets/images/no-cart.png" alt="" class="header-cart-no-item-img">
-                                <span class="header-cart-no-item-msg">Chưa có sản phẩm</span>
-                            </div>
-                            <!-- Has item -->
-                            <ul class="cart-list-item">
-                                <li class="cart-item">
-                                    <a href="" class="cart-item-name text-decoration-none">
-                                        <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
-                                            class="cart-item-img">
-                                    </a>
-                                    <div class="d-flex flex-column ms-4 justify-content-between">
-                                        <a href="" title="Squishy MJ Momo duck nháy
-                                        mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck nháy
-                                            mắt 7cm</a>
-                                        <span class="cart-item-cost">Đơn giá: 50.000đ</span>
-                                    </div>
-                                    <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
-                                        <span class="cart-item-quantity">x1</span>
-                                        <span class="cart-item-delete material-icons-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="cart-item">
-                                    <a href="" class="cart-item-name text-decoration-none">
-                                        <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
-                                            class="cart-item-img">
-                                    </a>
-                                    <div class="d-flex flex-column ms-4 justify-content-between">
-                                        <a href="" title="Squishy MJ Momo duck nháy
-                                        mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck nháy
-                                            mắt 7cm</a>
-                                        <span class="cart-item-cost">Đơn giá: 50.000đ</span>
-                                    </div>
-                                    <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
-                                        <span class="cart-item-quantity">x1</span>
-                                        <span class="cart-item-delete material-icons-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="cart-item">
-                                    <a href="" class="cart-item-name text-decoration-none">
-                                        <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
-                                            class="cart-item-img">
-                                    </a>
-                                    <div class="d-flex flex-column ms-4 justify-content-between">
-                                        <a href="" title="Squishy MJ Momo duck nháy
-                                        mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck nháy
-                                            mắt 7cm</a>
-                                        <span class="cart-item-cost">Đơn giá: 50.000đ</span>
-                                    </div>
-                                    <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
-                                        <span class="cart-item-quantity">x1</span>
-                                        <span class="cart-item-delete material-icons-outlined">
-                                            delete
-                                        </span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="total d-flex flex-column">
-                                <div class="d-flex justify-content-between py-4">
-                                    <span>Thành tiền:</span>
-                                    <div class="total-cost">95.000đ</div>
+                        <div class="header-cart">
+                            <span class="header-cart-icon material-icons-outlined">
+                                shopping_bag
+                            </span>
+                            <span
+                                class="header-cart-quantity d-flex justify-content-center align-items-center radiu">3</span>
+                            <!-- Cart no item: add class no-item -->
+                            <div class="header-cart-list ">
+                                <!-- No item -->
+                                <div class="list-no-item">
+                                    <img src="./assets/images/no-cart.png" alt="" class="header-cart-no-item-img">
+                                    <span class="header-cart-no-item-msg">Chưa có sản phẩm</span>
                                 </div>
-                                <div class="go-to-cart btn btn-pink">Xem giỏ hàng</div>
+                                <!-- Has item -->
+                                <ul class="cart-list-item">
+                                    <li class="cart-item">
+                                        <a href="" class="cart-item-name text-decoration-none">
+                                            <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
+                                                class="cart-item-img">
+                                        </a>
+                                        <div class="d-flex flex-column ms-4 justify-content-between">
+                                            <a href="" title="Squishy MJ Momo duck nháy
+                                            mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck
+                                                nháy
+                                                mắt 7cm</a>
+                                            <span class="cart-item-cost">Đơn giá: 50.000đ</span>
+                                        </div>
+                                        <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
+                                            <span class="cart-item-quantity">x1</span>
+                                            <span class="cart-item-delete material-icons-outlined">
+                                                delete
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <a href="" class="cart-item-name text-decoration-none">
+                                            <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
+                                                class="cart-item-img">
+                                        </a>
+                                        <div class="d-flex flex-column ms-4 justify-content-between">
+                                            <a href="" title="Squishy MJ Momo duck nháy
+                                            mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck
+                                                nháy
+                                                mắt 7cm</a>
+                                            <span class="cart-item-cost">Đơn giá: 50.000đ</span>
+                                        </div>
+                                        <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
+                                            <span class="cart-item-quantity">x1</span>
+                                            <span class="cart-item-delete material-icons-outlined">
+                                                delete
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <a href="" class="cart-item-name text-decoration-none">
+                                            <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG" alt=""
+                                                class="cart-item-img">
+                                        </a>
+                                        <div class="d-flex flex-column ms-4 justify-content-between">
+                                            <a href="" title="Squishy MJ Momo duck nháy
+                                            mắt 7cm" class="cart-item-name text-decoration-none">Squishy MJ Momo duck
+                                                nháy
+                                                mắt 7cm</a>
+                                            <span class="cart-item-cost">Đơn giá: 50.000đ</span>
+                                        </div>
+                                        <div class="d-flex flex-column ms-4 justify-content-center align-items-center">
+                                            <span class="cart-item-quantity">x1</span>
+                                            <span class="cart-item-delete material-icons-outlined">
+                                                delete
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="total d-flex flex-column">
+                                    <div class="d-flex justify-content-between py-4">
+                                        <span>Thành tiền:</span>
+                                        <div class="total-cost">95.000đ</div>
+                                    </div>
+                                    <div class="go-to-cart btn btn-pink">Xem giỏ hàng</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Search mobile -->
-                <div class="col-12 d-lg-none">
-                    <div class="header-search">
-                        <form class="search-form" action="" method="post">
-                            <input type="text" class="form-control search-form-input" placeholder="Tìm kiếm sản phẩm">
-                            <div class="btn btn-search d-flex align-items-center"><span class="material-icons-outlined">
-                                    search
-                                </span></div>
-                        </form>
-                        <span class="quick-search mt-2">
-                            <a class="header__link text-decoration-none" href="#">Ốp điện thoại</a>
-                            <a class="header__link text-decoration-none" href="#">Quạt nhựa</a>
-                            <a class="header__link text-decoration-none" href="#">Sticker</a>
-                            <a class="header__link text-decoration-none" href="#">BT21</a>
-                        </span>
+                    <!-- Search mobile -->
+                    <div class="col-12 d-lg-none">
+                        <div class="header-search">
+                            <form class="search-form" action="" method="post">
+                                <input type="text" class="form-control search-form-input"
+                                    placeholder="Tìm kiếm sản phẩm">
+                                <div class="btn btn-search d-flex align-items-center"><span
+                                        class="material-icons-outlined">
+                                        search
+                                    </span></div>
+                            </form>
+                            <span class="quick-search mt-2">
+                                <a class="header__link text-decoration-none" href="#">Ốp điện thoại</a>
+                                <a class="header__link text-decoration-none" href="#">Quạt nhựa</a>
+                                <a class="header__link text-decoration-none" href="#">Sticker</a>
+                                <a class="header__link text-decoration-none" href="#">BT21</a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header-bot d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col text-start">
-                    <a href="#" class="header-top__link text-decoration-none">TẤT CẢ</a>
-                    <a href="#" class="header-top__link text-decoration-none">Sách vở</a>
-                    <a href="#" class="header-top__link text-decoration-none">Dụng cụ học tập</a>
-                    <a href="#" class="header-top__link text-decoration-none">Liên hệ</a>
+        <!-- Nav PC -->
+        <div class="header-bot d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-start">
+                        <a href="#" class="header-top__link text-decoration-none">TẤT CẢ</a>
+                        <a href="#" class="header-top__link text-decoration-none">Sách vở</a>
+                        <a href="#" class="header-top__link text-decoration-none">Dụng cụ học tập</a>
+                        <a href="#" class="header-top__link text-decoration-none">Liên hệ</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- End header -->
 
     <!-- Begin SlideGroup -->
