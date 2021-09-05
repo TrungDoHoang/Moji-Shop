@@ -27,6 +27,16 @@ items.forEach((el) => {
     }
 })
 
-// $('.header-cart').click(() => {
-//     $('.header-cart-list').toggle()
-// })
+$('.header-cart').click(() => {
+    $('.header-cart-list').toggleClass('open')
+    // if($('.header-cart-list').hasClass('open')){
+    //     $('.header-cart-list').addClass('close')
+    //     $('.header-cart-list').removeClass('open')
+    // } else if($('.header-cart-list').hasClass('close')){
+    //     $('.header-cart-list').addClass('open')
+    //     $('.header-cart-list').removeClass('close')
+    // }
+})
+$('.header-cart').focusout(() => {
+    $('.header-cart-list').removeClass('open')
+})
