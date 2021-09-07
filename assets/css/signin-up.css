@@ -28,6 +28,10 @@
     font-size: 1.6rem;
     padding: 8px 12px;
 }
+.main-select{
+    font-size: 1.6rem;
+    padding: 8px 12px;
+}
 .main-input:focus{
     border: 1px solid #ced4da;
     box-shadow: none;

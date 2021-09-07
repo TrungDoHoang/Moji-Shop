@@ -267,27 +267,50 @@
                     </div>
                     <form action="#" method="POST" class="main-form">
                         <div class="m-4">
-                            <input type="text" class="main-input form-control" placeholder="Nhập email hoặc tên đăng nhập">
+                            <input type="text" class="main-input form-control" placeholder="Tên đăng nhập (*)" required>
                         </div>
                         <div class="m-4">
-                            <input type="password" class="main-input form-control" placeholder="Mật khẩu ">
+                            <input type="text" class="main-input form-control" placeholder="Họ tên (*)" required>
                         </div>
                         <div class="m-4">
-                            <div type="submit" class="submit-button btn btn-pink">Đăng nhập</div>
+                            <input type="date" class="main-input form-control"  required>
+                        </div>
+                        <div class="m-4">
+                            <input type="tel" class="main-input form-control" placeholder="Điện thoại (*)" required>
+                        </div>
+                        <div class="m-4">
+                            <input type="email" class="main-input form-control" placeholder="Email (*)" required>
+                        </div>
+                        <div class="m-4">
+                            <select class="form-select main-select" required>
+                                <option selected>Tỉnh/Thành phố *</option>
+                                <option value="1">Bắc Ninh</option>
+                                <option value="2">Hà Nội</option>
+                                <option value="3">Hải Phòng</option>
+                                <option value="4">Hưng Yên</option>
+                              </select>
+                        </div>
+                        <div class="m-4">
+                            <select class="form-select main-select" required>
+                                <option selected>Quận/Huyện *</option>
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">C</option>
+                              </select>
+                        </div>
+                        <div class="m-4">
+                            <input type="text" class="main-input form-control" placeholder="Địa chỉ chi tiết (*)" required>
+                        </div>
+                        <div class="m-4">
+                            <input type="password" class="main-input form-control" placeholder="Mật khẩu (*)" required>
+                        </div>
+                        <div class="m-4">
+                            <input type="password" class="vali main-input form-control" placeholder="Nhập lại mật khẩu (*)" required>
+                        </div>
+                        <div class="m-4">
+                            <button type="submit" class="submit-button btn btn-pink">Đăng nhập</button>
                         </div>
                     </form>
-                    <a href="#" class="forgot-password main-link text-decoration-none">Quên mật khẩu</a>
-                    <p>Hoặc đăng nhập với</p>
-                    <div class="social m-4 d-flex flex-column">
-                        <a href="" class="f-b social-link text-decoration-none d-flex align-items-center justify-content-center">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                            Đăng nhập với Facebook
-                        </a>
-                        <a href="" class="g-g social-link text-decoration-none d-flex align-items-center justify-content-center">
-                            <ion-icon name="logo-google"></ion-icon>
-                            Đăng nhập với Google
-                        </a>
-                    </div>
                 </div>
             <!-- </div> -->
         </div>

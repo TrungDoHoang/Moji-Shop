@@ -13,7 +13,7 @@ $(document).ready(function () {
         })
     }
     // Hiệu ứng xuất hiện của product
-    if ($('.product')) {
+    if (document.querySelector('.product')) {
         TweenMax.staggerFrom(
             $('.product'), // phần tử được chọn
             1, // thời gian chuyển động
