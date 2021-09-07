@@ -71,7 +71,7 @@
     display: none;
 }
 .main-category-filter{
-    width: 50vh;
+    width: 50vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -138,4 +138,10 @@
 .form-select{
     flex: 1;
     font-size: 1.6rem;
+}
+
+@media (max-width: 767px) {
+    .main-category-filter{
+        width: 85vw;
+    }
 }
