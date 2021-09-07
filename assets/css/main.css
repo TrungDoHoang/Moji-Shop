@@ -66,8 +66,13 @@ html, body {
     background-color: #fff;
 }
 
-#toggle:checked~.overlay, #toggle:checked~.nav-mobile {
+#toggle:checked~.overlay{
     display: block !important;
+}
+#toggle:checked~.nav-mobile {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 30;
 }
 
 .header-search {
@@ -322,7 +327,7 @@ html, body {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 20;
+    z-index: 23;
 }
 
 .nav-mobile {
@@ -332,7 +337,10 @@ html, body {
     bottom: 0;
     left: 0;
     width: 40vw;
-    z-index: 30;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    z-index: -1;
 }
 
 .header-bot {

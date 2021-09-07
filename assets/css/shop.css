@@ -77,7 +77,10 @@
     left: 0;
     bottom: 0;
     background-color: #fff;
-    z-index: 20;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: -1;
 }
 .main-category-filter .main-category-list{
     max-height: 100vh;
@@ -86,21 +89,26 @@
 #filter:checked ~ .filter-btn{
     display: none!important;
 }
-.overlay,
-.main-category-filter{
+.overlay{
     display: none;
 }
-#filter:checked ~ .overlay,
-#filter:checked ~ .main-category-filter{
+#filter:checked ~ .overlay
+{
     display: block;
+}
+#filter:checked ~ .main-category-filter{
+    z-index: 24;
+    opacity: 1;
+    transform: translateX(0);
 }
 .filter-btn{
     position: fixed;
     width: 35px;
     font-size: 1.2rem;
-    background-color: var(--pink-light);
+    background-color: rgb(255 176 189 / 0.8);
     color: #fff;
     right: 0;
+    top: 300px;
     z-index: 20;
 }
 .pagination{
