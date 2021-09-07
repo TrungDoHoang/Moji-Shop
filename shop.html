@@ -260,9 +260,9 @@
     <div class="main">
         <div class="container">
             <div class="row mt-5 gx-5">
-                <div class="col-3">
+                <div class="col-lg-3 d-lg-block d-none">
                     <div class="main-category">
-                        <div class="main-category-top d-flex justify-content-between">
+                        <div class="main-category-top d-flex justify-content-between open">
                             <h3 class="main-category-heading">Danh mục sản phẩm</h3>
                             <span class="main-category-top-add material-icons-outlined">
                                 add
@@ -271,20 +271,136 @@
                                 remove
                             </span>
                         </div>
-                        <ul class="main-category-list">
-                            <li class="main-category-item">1</li>
-                            <ul class="main-category-list-lv2 list-unstyled">
-                                <li class="main-category-item-lv2">2</li>
-                                <li class="main-category-item-lv2">3</li>
-                            </ul>
+                        <ul class="main-category-list list-unstyled mt-4">
+                            <li class="main-category-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="main-category-name">Sách vở</span>
+                                    <span class="down material-icons-outlined">
+                                        expand_more
+                                    </span>
+                                    <span class="less material-icons-outlined">
+                                        expand_less
+                                    </span>
+                                </div>
+                                <ul class="main-category-list-lv2 list-unstyled">
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="./shop.html">Sách giáo khoa</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Sách khoa học</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Truyện ngôn tình</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-category-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="main-category-name">Dụng cụ học tập</span>
+                                    <span class="down material-icons-outlined">
+                                        expand_more
+                                    </span>
+                                    <span class="less material-icons-outlined">
+                                        expand_less
+                                    </span>
+                                </div>
+                                <ul class="main-category-list-lv2 list-unstyled">
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="./shop.html">Bút ngộ nghĩnh</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Balo thời trang</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Thước kẻ</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Hộp bút đa năng</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Dụng cụ học tập khác</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-9">
-                    <div class="new-products">
-                        <h3>Sản phẩm mới</h3>
+                <!-- Categogy- mobile -->
+                <div class="category-mobile d-lg-none">
+                    <input type="checkbox" name="filter" id="filter" hidden>
+                    <label for="filter" class="filter-btn d-flex flex-column align-items-center justify-content-center">
+                        <span class="material-icons-outlined">
+                            filter_alt
+                        </span>
+                        Filter
+                    </label>
+                    <label for="filter" class="overlay"></label>
+                    <div class="main-category-filter">
+                        <label for="filter" class="nav-mobile-items d-flex justify-content-end pt-4 pb-4 ps-4">
+                            <span class="material-icons-outlined">
+                                close
+                            </span>
+                        </label>
+                        <div class="main-category-top d-flex justify-content-between open">
+                            <h3 class="main-category-heading">Danh mục sản phẩm</h3>
+                            <span class="main-category-top-add material-icons-outlined">
+                                add
+                            </span>
+                            <span class="main-category-top-remove material-icons-outlined">
+                                remove
+                            </span>
+                        </div>
+                        <ul class="main-category-list list-unstyled mt-3">
+                            <li class="main-category-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="main-category-name">Sách vở</span>
+                                    <span class="down material-icons-outlined">
+                                        expand_more
+                                    </span>
+                                    <span class="less material-icons-outlined">
+                                        expand_less
+                                    </span>
+                                </div>
+                                <ul class="main-category-list-lv2 list-unstyled">
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="./shop.html">Sách giáo khoa</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Sách khoa học</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Truyện ngôn tình</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-category-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="main-category-name">Dụng cụ học tập</span>
+                                    <span class="down material-icons-outlined">
+                                        expand_more
+                                    </span>
+                                    <span class="less material-icons-outlined">
+                                        expand_less
+                                    </span>
+                                </div>
+                                <ul class="main-category-list-lv2 list-unstyled">
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="./shop.html">Bút ngộ nghĩnh</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Balo thời trang</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Thước kẻ</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Hộp bút đa năng</a></li>
+                                    <li class="main-category-item-lv2 text-decoration-none"><a
+                                            class="text-decoration-none" href="#">Dụng cụ học tập khác</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="row g-5">
+                </div>
+                <div class="col-lg-9 col-12 col-md-11">
+                    <div class="products d-flex justify-content-between">
+                        <div class="products-heading">
+                            <h3>Sản phẩm</h3>
+                        </div>
+                        <select class="form-select ms-4 d-none d-xl-block">
+                            <option selected>Mới nhất</option>
+                            <option value="1">Giá tăng dần</option>
+                            <option value="2">Giá giảm dần</option>
+                            <option value="3">Sale</option>
+                        </select>
+                    </div>
+                    <div class="row g-4 mt-0">
                         <div class="col-lg-3 col-md-4 col-6">
                             <div class="product">
                                 <div class="product-img">
@@ -629,245 +745,252 @@
                                 <p class="product-cost">35.000đ</p>
                             </div>
                         </div>
-                        <div class="row g-5">
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block"
-                                            title="Squishy MJ Momo duck nháy mắt 7cm">
-                                            <img src="./assets/images/product/21071018_XX_thumb.JPG">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="text-decoration-none" title="Squishy MJ Momo duck nháy mắt 7cm">
-                                        <h4 class="product-name">Squishy MJ Momo duck nháy mắt 7cm</h4>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block"
+                                        title="Squishy MJ Momo duck nháy mắt 7cm">
+                                        <img src="./assets/images/product/21071018_XX_thumb.JPG">
                                     </a>
-                                    <p class="product-cost">50.000đ</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block"
-                                            title="Sổ vở kế hoạch Monthly Thỏ Bunny flowers 7x9">
-                                            <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
                                     </div>
-                                    <a href="#" class="text-decoration-none"
-                                        title="Sổ vở kế hoạch Monthly Thỏ Bunny flowers 7x9">
-                                        <h4 class="product-name">Sổ vở kế hoạch Monthly Thỏ Bunny flowers 7x9</h4>
-                                    </a>
-                                    <p class="product-cost">64.000đ</p>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block"
-                                            title="Sổ vở B5 MJ Cat meow holiday">
-                                            <img src="./assets/images/product/20112228_XX_thumb_450x450.JPG">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="text-decoration-none" title="Sổ vở B5 MJ Cat meow holiday">
-                                        <h4 class="product-name">Sổ vở B5 MJ Cat meow holiday</h4>
-                                    </a>
-                                    <p class="product-cost">25.000đ</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block"
-                                            title="Sổ vở MZHS Daisy duck have a nice day 17x24 200 trang">
-                                            <img src="./assets/images/product/21012339_XX_thumb_450x450.JPG">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="text-decoration-none"
-                                        title="Sổ vở MZHS Daisy duck have a nice day 17x24 200 trang">
-                                        <h4 class="product-name">Sổ vở MZHS Daisy duck have a nice day 17x24 200 trang
-                                        </h4>
-                                    </a>
-                                    <p class="product-cost">54.000đ</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block"
-                                            title="Sổ vở giấy kiểm tra dòng kẻ ô ly MZ We bare bears Ice bear math 16x21 20 tờ">
-                                            <img src="./assets/images/product/21052103_XX_thumb_450x450.jpg">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="text-decoration-none"
-                                        title="Sổ vở giấy kiểm tra dòng kẻ ô ly MZ We bare bears Ice bear math 16x21 20 tờ">
-                                        <h4 class="product-name">Sổ vở giấy kiểm tra dòng kẻ ô ly MZ We bare bears Ice
-                                            bear math 16x21 20 tờ</h4>
-                                    </a>
-                                    <p class="product-cost">50.000đ</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block"
-                                            title="Sổ vở A5 MJ Little girl sweet mango fruit">
-                                            <img src="./assets/images/product/21060014_xx_thumb.jpg">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="text-decoration-none"
-                                        title="Sổ vở A5 MJ Little girl sweet mango fruit">
-                                        <h4 class="product-name">Sổ vở A5 MJ Little girl sweet mango fruit</h4>
-                                    </a>
-                                    <p class="product-cost">70.000đ</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block" title="Sổ vở B5 MJ Retro film">
-                                            <img src="./assets/images/product/21070013_XX_thumb.JPG">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="text-decoration-none" title="Sổ vở B5 MJ Retro film">
-                                        <h4 class="product-name">Sổ vở B5 MJ Retro film</h4>
-                                    </a>
-                                    <p class="product-cost">40.000đ</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#" class="text-decoration-none d-block"
-                                            title="Sổ vở B5 MJ Jellycat bartholomew baby bear">
-                                            <img src="./assets/images/product/21070014_XX_thumb.JPG">
-                                        </a>
-                                        <div class="product-action">
-                                            <span class="material-icons-outlined">
-                                                favorite_border
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                favorite
-                                            </span>
-                                            <span class="material-icons-outlined">
-                                                medical_services
-                                            </span>
-                                            <span class="d-none material-icons-outlined">
-                                                work
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="text-decoration-none"
-                                        title="Sổ vở B5 MJ Jellycat bartholomew baby bear">
-                                        <h4 class="product-name">Sổ vở B5 MJ Jellycat bartholomew baby bear</h4>
-                                    </a>
-                                    <p class="product-cost">35.000đ</p>
-                                </div>
+                                <a href="#" class="text-decoration-none" title="Squishy MJ Momo duck nháy mắt 7cm">
+                                    <h4 class="product-name">Squishy MJ Momo duck nháy mắt 7cm</h4>
+                                </a>
+                                <p class="product-cost">50.000đ</p>
                             </div>
                         </div>
-                        <div class="col-12 text-center">
-                            <div class="pagination">
-                                <h1 class="btn">1</h1>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block"
+                                        title="Sổ vở kế hoạch Monthly Thỏ Bunny flowers 7x9">
+                                        <img src="./assets/images/product/20091002_XX_thumb_450x450.JPG">
+                                    </a>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"
+                                    title="Sổ vở kế hoạch Monthly Thỏ Bunny flowers 7x9">
+                                    <h4 class="product-name">Sổ vở kế hoạch Monthly Thỏ Bunny flowers 7x9</h4>
+                                </a>
+                                <p class="product-cost">64.000đ</p>
                             </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block"
+                                        title="Sổ vở B5 MJ Cat meow holiday">
+                                        <img src="./assets/images/product/20112228_XX_thumb_450x450.JPG">
+                                    </a>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none" title="Sổ vở B5 MJ Cat meow holiday">
+                                    <h4 class="product-name">Sổ vở B5 MJ Cat meow holiday</h4>
+                                </a>
+                                <p class="product-cost">25.000đ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block"
+                                        title="Sổ vở MZHS Daisy duck have a nice day 17x24 200 trang">
+                                        <img src="./assets/images/product/21012339_XX_thumb_450x450.JPG">
+                                    </a>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"
+                                    title="Sổ vở MZHS Daisy duck have a nice day 17x24 200 trang">
+                                    <h4 class="product-name">Sổ vở MZHS Daisy duck have a nice day 17x24 200 trang
+                                    </h4>
+                                </a>
+                                <p class="product-cost">54.000đ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block"
+                                        title="Sổ vở giấy kiểm tra dòng kẻ ô ly MZ We bare bears Ice bear math 16x21 20 tờ">
+                                        <img src="./assets/images/product/21052103_XX_thumb_450x450.jpg">
+                                    </a>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"
+                                    title="Sổ vở giấy kiểm tra dòng kẻ ô ly MZ We bare bears Ice bear math 16x21 20 tờ">
+                                    <h4 class="product-name">Sổ vở giấy kiểm tra dòng kẻ ô ly MZ We bare bears Ice
+                                        bear math 16x21 20 tờ</h4>
+                                </a>
+                                <p class="product-cost">50.000đ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block"
+                                        title="Sổ vở A5 MJ Little girl sweet mango fruit">
+                                        <img src="./assets/images/product/21060014_xx_thumb.jpg">
+                                    </a>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"
+                                    title="Sổ vở A5 MJ Little girl sweet mango fruit">
+                                    <h4 class="product-name">Sổ vở A5 MJ Little girl sweet mango fruit</h4>
+                                </a>
+                                <p class="product-cost">70.000đ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block" title="Sổ vở B5 MJ Retro film">
+                                        <img src="./assets/images/product/21070013_XX_thumb.JPG">
+                                    </a>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none" title="Sổ vở B5 MJ Retro film">
+                                    <h4 class="product-name">Sổ vở B5 MJ Retro film</h4>
+                                </a>
+                                <p class="product-cost">40.000đ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a href="#" class="text-decoration-none d-block"
+                                        title="Sổ vở B5 MJ Jellycat bartholomew baby bear">
+                                        <img src="./assets/images/product/21070014_XX_thumb.JPG">
+                                    </a>
+                                    <div class="product-action">
+                                        <span class="material-icons-outlined">
+                                            favorite_border
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            favorite
+                                        </span>
+                                        <span class="material-icons-outlined">
+                                            medical_services
+                                        </span>
+                                        <span class="d-none material-icons-outlined">
+                                            work
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-decoration-none"
+                                    title="Sổ vở B5 MJ Jellycat bartholomew baby bear">
+                                    <h4 class="product-name">Sổ vở B5 MJ Jellycat bartholomew baby bear</h4>
+                                </a>
+                                <p class="product-cost">35.000đ</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -979,6 +1102,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script>
+        $('.main-category-item > div').click(function () {
+            $(this).toggleClass('open')
+        })
+        $('.main-category-top').click(function () {
+            $(this).toggleClass('open')
+        })
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 
