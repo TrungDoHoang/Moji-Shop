@@ -41,5 +41,22 @@ $(document).ready(function () {
             }
         })
     }
+    if (document.querySelector('.tab-item')) {
+        const tabs = Array.from($(".tab-item"))
+        const panes = $('.tab-pane')
+        
+        tabs.forEach((tab, index) => {
+            const pane = panes[index];
+    
+            tab.onclick = function () {
+                $(".tab-item.active").removeClass("active")
+                $(".tab-pane.active").removeClass("active")
+    
+                $(this).addClass("active")
+                pane.classList.add('active')
+            }
+        });
+    
+    }
 });
 

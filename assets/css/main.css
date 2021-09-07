@@ -573,6 +573,9 @@ html, body {
 /* Multi carousel */
 
 @media (max-width: 767px) {
+    .header-top__link{
+        font-size: 1.2rem;
+    }
     .nav-mobile {
         width: 100vw;
     }

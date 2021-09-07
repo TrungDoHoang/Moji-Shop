@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/signin-up.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
 </head>
 
 <body>
@@ -260,58 +260,260 @@
     <div class="container text-center">
         <div class="row">
             <!-- <div class="m-auto"> -->
-                <div class="main">
-                    <div class="main-heading">
-                        <a href="./signin.html" class="main-heading-link text-decoration-none">Đăng nhập</a>
-                        <a href="./signup.html" class="main-heading-link text-decoration-none active">Đăng ký</a>
-                    </div>
-                    <form action="#" method="POST" class="main-form">
-                        <div class="m-4">
-                            <input type="text" class="main-input form-control" placeholder="Tên đăng nhập (*)" required>
-                        </div>
-                        <div class="m-4">
-                            <input type="text" class="main-input form-control" placeholder="Họ tên (*)" required>
-                        </div>
-                        <div class="m-4">
-                            <input type="date" class="main-input form-control"  required>
-                        </div>
-                        <div class="m-4">
-                            <input type="tel" class="main-input form-control" placeholder="Điện thoại (*)" required>
-                        </div>
-                        <div class="m-4">
-                            <input type="email" class="main-input form-control" placeholder="Email (*)" required>
-                        </div>
-                        <div class="m-4">
-                            <select class="form-select main-select" required>
-                                <option selected>Tỉnh/Thành phố *</option>
-                                <option value="1">Bắc Ninh</option>
-                                <option value="2">Hà Nội</option>
-                                <option value="3">Hải Phòng</option>
-                                <option value="4">Hưng Yên</option>
-                              </select>
-                        </div>
-                        <div class="m-4">
-                            <select class="form-select main-select" required>
-                                <option selected>Quận/Huyện *</option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="3">C</option>
-                              </select>
-                        </div>
-                        <div class="m-4">
-                            <input type="text" class="main-input form-control" placeholder="Địa chỉ chi tiết (*)" required>
-                        </div>
-                        <div class="m-4">
-                            <input type="password" class="main-input form-control" placeholder="Mật khẩu (*)" required>
-                        </div>
-                        <div class="m-4">
-                            <input type="password" class="vali main-input form-control" placeholder="Nhập lại mật khẩu (*)" required>
-                        </div>
-                        <div class="m-4">
-                            <button type="submit" class="submit-button btn btn-pink">Đăng ký</button>
-                        </div>
-                    </form>
+            <div class="main mt-4">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html"
+                                class="header__link text-decoration-none">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Hệ thống cửa hàng</li>
+                    </ul>
+                </nav>
+                <div class="main-heading col-12 text-center">
+                    <h3>Hệ thống cửa hàng</h3>
                 </div>
+                <div class="col-12">
+                    <!-- Tab items -->
+                    <div class="tabs d-flex">
+                        <div class="tab-item active">
+                            Hà Nội
+                        </div>
+                        <div class="tab-item">
+                            TP.Hồ Chí Minh
+                        </div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <div class="store row g-5">
+                                <img class="img-store col-md-6 col-12" src="./assets/images/store/81_Ba_Trieu.jpg"
+                                    alt="">
+                                <div
+                                    class="store-location-details d-flex flex-column align-items-baseline justify-content-between col-md-6 col-12">
+                                    <div class="name-store d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            maps_home_work
+                                        </span>
+                                        Moji Bà Triệu
+                                    </div>
+                                    <div class="store-location d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            location_on
+                                        </span>
+                                        81 Bà Triệu, Hai Bà Trưng
+                                    </div>
+                                    <div class="store-tel d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            call
+                                        </span>
+                                        0968317253
+                                    </div>
+                                    <div class="store-time d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            access_time_filled
+                                        </span>
+                                        9h - 22h
+                                    </div>
+                                    <div class="store-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59582.461376054256!2d105.74907541260619!3d21.036533426339165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba257897c07%3A0x92bf9bdd0bcec4bc!2sMoji%20Shop!5e0!3m2!1svi!2s!4v1631028012406!5m2!1svi!2s"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store row g-5">
+                                <img class="img-store col-md-6 col-12" src="./assets/images/store/60_Tran_Dai_Nghia.jpg"
+                                    alt="">
+                                <div
+                                    class="store-location-details d-flex flex-column align-items-baseline justify-content-between col-md-6 col-12">
+                                    <div class="name-store d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            maps_home_work
+                                        </span>
+                                        Moji Trần Đại Nghĩa
+                                    </div>
+                                    <div class="store-location d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            location_on
+                                        </span>
+                                        60 Trần Đại Nghĩa, Hai Bà Trưng
+                                    </div>
+                                    <div class="store-tel d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            call
+                                        </span>
+                                        0971913545
+                                    </div>
+                                    <div class="store-time d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            access_time_filled
+                                        </span>
+                                        9h - 22h
+                                    </div>
+                                    <div class="store-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59582.461376054256!2d105.74907541260619!3d21.036533426339165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba257897c07%3A0x92bf9bdd0bcec4bc!2sMoji%20Shop!5e0!3m2!1svi!2s!4v1631028012406!5m2!1svi!2s"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store row g-5">
+                                <img class="img-store col-md-6 col-12" src="./assets/images/store/241_Chua_Boc.jpg"
+                                    alt="">
+                                <div
+                                    class="store-location-details d-flex flex-column align-items-baseline justify-content-between col-md-6 col-12">
+                                    <div class="name-store d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            maps_home_work
+                                        </span>
+                                        Moji Chùa Bộc
+                                    </div>
+                                    <div class="store-location d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            location_on
+                                        </span>
+                                        241 Chùa Bộc, Đống Đa
+                                    </div>
+                                    <div class="store-tel d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            call
+                                        </span>
+                                        0904536337
+                                    </div>
+                                    <div class="store-time d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            access_time_filled
+                                        </span>
+                                        9h - 22h
+                                    </div>
+                                    <div class="store-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59582.461376054256!2d105.74907541260619!3d21.036533426339165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba257897c07%3A0x92bf9bdd0bcec4bc!2sMoji%20Shop!5e0!3m2!1svi!2s!4v1631028012406!5m2!1svi!2s"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane">
+                            <div class="store row g-5">
+                                <img class="img-store col-md-6 col-12" src="./assets/images/store/92_Ho_Tung_Mau.jpg"
+                                    alt="">
+                                <div
+                                    class="store-location-details d-flex flex-column align-items-baseline justify-content-between col-md-6 col-12">
+                                    <div class="name-store d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            maps_home_work
+                                        </span>
+                                        Moji Hồ Tùng Mậu
+                                    </div>
+                                    <div class="store-location d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            location_on
+                                        </span>
+                                        92 Hồ Tùng Mậu, Phường Bến Nghé, Q1
+                                    </div>
+                                    <div class="store-tel d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            call
+                                        </span>
+                                        0964904992
+                                    </div>
+                                    <div class="store-time d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            access_time_filled
+                                        </span>
+                                        9h - 22h
+                                    </div>
+                                    <div class="store-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.011332308888!2d106.703583!3d10.772747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x687c002236b0f822!2sMoji%20Shop!5e0!3m2!1svi!2sus!4v1631031896991!5m2!1svi!2sus"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store row g-5">
+                                <img class="img-store col-md-6 col-12" src="./assets/images/store/Nguyen_DInh_Chieu.jpg"
+                                    alt="">
+                                <div
+                                    class="store-location-details d-flex flex-column align-items-baseline justify-content-between col-md-6 col-12">
+                                    <div class="name-store d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            maps_home_work
+                                        </span>
+                                        Moji Nguyễn Đình Chiểu
+                                    </div>
+                                    <div class="store-location d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            location_on
+                                        </span>
+                                        459E Nguyễn Đình Chiểu, P5, Q3 (ngã tư Cao Thắng)
+                                    </div>
+                                    <div class="store-tel d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            call
+                                        </span>
+                                        0971913545
+                                    </div>
+                                    <div class="store-time d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            access_time_filled
+                                        </span>
+                                        9h - 22h
+                                    </div>
+                                    <div class="store-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.011332308888!2d106.703583!3d10.772747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x687c002236b0f822!2sMoji%20Shop!5e0!3m2!1svi!2sus!4v1631031896991!5m2!1svi!2sus"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store row g-5">
+                                <img class="img-store col-md-6 col-12" src="./assets/images/store/Su_Van_Hanh.jpg"
+                                    alt="">
+                                <div
+                                    class="store-location-details d-flex flex-column align-items-baseline justify-content-between col-md-6 col-12">
+                                    <div class="name-store d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            maps_home_work
+                                        </span>
+                                        Moji Sư Vạn Hạnh
+                                    </div>
+                                    <div class="store-location d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            location_on
+                                        </span>
+                                        708 Sư Vạn Hạnh, P.12, Q.10 (đối diện chéo Vạn Hạnh Mall)
+                                    </div>
+                                    <div class="store-tel d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            call
+                                        </span>
+                                        0904536337
+                                    </div>
+                                    <div class="store-time d-flex align-items-center">
+                                        <span class="me-3 material-icons-outlined">
+                                            access_time_filled
+                                        </span>
+                                        9h - 22h
+                                    </div>
+                                    <div class="store-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.011332308888!2d106.703583!3d10.772747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x687c002236b0f822!2sMoji%20Shop!5e0!3m2!1svi!2sus!4v1631031896991!5m2!1svi!2sus"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- </div> -->
         </div>
     </div>
