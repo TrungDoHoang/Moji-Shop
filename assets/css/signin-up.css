@@ -52,13 +52,7 @@
 .main > p{
     margin-top: 20px;
 }
-.f-b,.f-b:hover {
-    background: #2e4b88;
-    color: #fff;
-}
-ion-icon{
-    margin-right: 4px;
-}
+
 .social-link{
     font-size: 1.6rem;
     padding: 8px 10px;

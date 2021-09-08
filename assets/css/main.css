@@ -570,6 +570,14 @@ html, body {
     z-index: 10;
 }
 
+.f-b,.f-b:hover {
+    background: #2e4b88;
+    color: #fff;
+}
+ion-icon{
+    margin-right: 4px;
+}
+
 /* Multi carousel */
 
 @media (max-width: 767px) {

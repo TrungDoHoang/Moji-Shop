@@ -58,5 +58,18 @@ $(document).ready(function () {
         });
     
     }
+    if(document.querySelector('.product-details')){
+        $('input[type=radio][name=color]').change(function() {
+            let [name, ...last] = $('#name').text().split('-')
+            $('#name').text(`${name}-${$('input[type=radio][name=color]:checked').val()}`)
+        })
+        $('input[name=quantity][type=number]').blur(function() {
+            let val = $(this).val()
+            if(val < 1){
+                alert('Số lượng mua tối thiểu là 1')
+                $(this).val(1)
+            } 
+        })
+    }
 });
 
